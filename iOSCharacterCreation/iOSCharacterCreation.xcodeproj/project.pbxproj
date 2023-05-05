@@ -16,6 +16,8 @@
 		D36DE1742A05479900CEB800 /* iOSCharacterCreationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36DE1732A05479900CEB800 /* iOSCharacterCreationTests.swift */; };
 		D36DE17E2A05479900CEB800 /* iOSCharacterCreationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36DE17D2A05479900CEB800 /* iOSCharacterCreationUITests.swift */; };
 		D36DE1802A05479900CEB800 /* iOSCharacterCreationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36DE17F2A05479900CEB800 /* iOSCharacterCreationUITestsLaunchTests.swift */; };
+		D36DE18E2A05496000CEB800 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36DE18D2A05496000CEB800 /* ContentView.swift */; };
+		D36DE1902A054AAE00CEB800 /* CharacterDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36DE18F2A054AAE00CEB800 /* CharacterDataView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		D36DE1792A05479900CEB800 /* iOSCharacterCreationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCharacterCreationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36DE17D2A05479900CEB800 /* iOSCharacterCreationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCharacterCreationUITests.swift; sourceTree = "<group>"; };
 		D36DE17F2A05479900CEB800 /* iOSCharacterCreationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCharacterCreationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D36DE18D2A05496000CEB800 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D36DE18F2A054AAE00CEB800 /* CharacterDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		D36DE15B2A05479600CEB800 /* iOSCharacterCreation */ = {
 			isa = PBXGroup;
 			children = (
+				D36DE18C2A05494700CEB800 /* Views */,
 				D36DE15C2A05479600CEB800 /* AppDelegate.swift */,
 				D36DE15E2A05479600CEB800 /* SceneDelegate.swift */,
 				D36DE1602A05479600CEB800 /* ViewController.swift */,
@@ -125,6 +130,15 @@
 				D36DE17F2A05479900CEB800 /* iOSCharacterCreationUITestsLaunchTests.swift */,
 			);
 			path = iOSCharacterCreationUITests;
+			sourceTree = "<group>";
+		};
+		D36DE18C2A05494700CEB800 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D36DE18D2A05496000CEB800 /* ContentView.swift */,
+				D36DE18F2A054AAE00CEB800 /* CharacterDataView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +274,8 @@
 			files = (
 				D36DE1612A05479600CEB800 /* ViewController.swift in Sources */,
 				D36DE15D2A05479600CEB800 /* AppDelegate.swift in Sources */,
+				D36DE18E2A05496000CEB800 /* ContentView.swift in Sources */,
+				D36DE1902A054AAE00CEB800 /* CharacterDataView.swift in Sources */,
 				D36DE15F2A05479600CEB800 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

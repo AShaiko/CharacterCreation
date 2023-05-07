@@ -10,7 +10,11 @@ import SwiftUI
 struct CharacterDataView: View {
     var body: some View {
         VStack {
-            Text("Input character data")
+            Button(action: {
+                Unity.shared.show()
+            }) {
+                Text("Generate character")
+            }
         }
     }
 }

@@ -19,8 +19,8 @@
 		D36DE18E2A05496000CEB800 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36DE18D2A05496000CEB800 /* ContentView.swift */; };
 		D36DE1902A054AAE00CEB800 /* CharacterDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36DE18F2A054AAE00CEB800 /* CharacterDataView.swift */; };
 		D36DE1992A07B9F700CEB800 /* Unity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36DE1972A07B9B700CEB800 /* Unity.swift */; };
-		D36DE19B2A07BAFD00CEB800 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36DE19A2A07BAFD00CEB800 /* UnityFramework.framework */; };
-		D36DE19C2A07BAFD00CEB800 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D36DE19A2A07BAFD00CEB800 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D38CFCAB2A0B78280055F4C3 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38CFCAA2A0B78280055F4C3 /* UnityFramework.framework */; };
+		D38CFCAC2A0B78280055F4C3 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D38CFCAA2A0B78280055F4C3 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D36DE19D2A07BAFD00CEB800 /* Embed Frameworks */ = {
+		D38CFCAD2A0B78280055F4C3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D36DE19C2A07BAFD00CEB800 /* UnityFramework.framework in Embed Frameworks */,
+				D38CFCAC2A0B78280055F4C3 /* UnityFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +72,9 @@
 		D36DE18F2A054AAE00CEB800 /* CharacterDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDataView.swift; sourceTree = "<group>"; };
 		D36DE1972A07B9B700CEB800 /* Unity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unity.swift; sourceTree = "<group>"; };
 		D36DE19A2A07BAFD00CEB800 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D38CFCA52A0B77950055F4C3 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D38CFCAA2A0B78280055F4C3 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3DA4BB12A0B73440002C43D /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D36DE19B2A07BAFD00CEB800 /* UnityFramework.framework in Frameworks */,
+				D38CFCAB2A0B78280055F4C3 /* UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +169,9 @@
 		D36DE1912A07B30A00CEB800 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D38CFCAA2A0B78280055F4C3 /* UnityFramework.framework */,
+				D38CFCA52A0B77950055F4C3 /* UnityFramework.framework */,
+				D3DA4BB12A0B73440002C43D /* UnityFramework.framework */,
 				D36DE19A2A07BAFD00CEB800 /* UnityFramework.framework */,
 			);
 			name = Frameworks;
@@ -181,7 +187,7 @@
 				D36DE1552A05479600CEB800 /* Sources */,
 				D36DE1562A05479600CEB800 /* Frameworks */,
 				D36DE1572A05479600CEB800 /* Resources */,
-				D36DE19D2A07BAFD00CEB800 /* Embed Frameworks */,
+				D38CFCAD2A0B78280055F4C3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -367,6 +373,7 @@
 		D36DE1812A05479900CEB800 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -427,6 +434,7 @@
 		D36DE1822A05479900CEB800 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

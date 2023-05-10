@@ -14,15 +14,13 @@ public class CharacterBehaviour : MonoBehaviour
     }
 
     public void ChangeToNext() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            if (index < characterPrefab.Length - 1) {
-                index++;
-            } else {
-                index = 0;
-            }
-
-            ChangeObject();
+        if (index < characterPrefab.Length - 1) {
+            index++;
+        } else {
+            index = 0;
         }
+
+        ChangeObject();
     }
 
     private void ChangeObject() {

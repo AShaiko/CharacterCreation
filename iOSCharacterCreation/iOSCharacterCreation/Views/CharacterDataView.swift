@@ -12,12 +12,21 @@ fileprivate let ObjectName = "Character"
 struct CharacterDataView: View {
     @State private var name: String = ""
     @State private var gender: Gender = .male
-    @State private var age: Int = 0
+    @State private var age: String = "0"
     
     var body: some View {
         VStack {
             TextField("Name", text: $name)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            
+            TextField("Age", text: $age)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .keyboardType(.numberPad)
+                .onReceive(age.publisher.collect()) { newValue in
+                    let filtered = newValue.filter { $0.isNumber }
+                    self.age = String(filtered.prefix(3))
+                }
                 .padding()
             
             Picker(selection: $gender, label: Text("Gender")) {
@@ -26,11 +35,6 @@ struct CharacterDataView: View {
                 }
             }
             .pickerStyle(SegmentedPickerStyle())
-            .padding()
-            
-            Stepper(value: $age, in: 0...100, step: 1) {
-                Text("Age: \(age)")
-            }
             .padding()
             
             Button(action: {
@@ -56,7 +60,7 @@ struct CharacterDataView: View {
         Unity.shared.sendMessage(
             ObjectName,
             methodName: "SetAge",
-            message: String(age)
+            message: age
         )
     }
 }

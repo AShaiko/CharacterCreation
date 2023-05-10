@@ -1483,6 +1483,10 @@ MonoBehaviour:
   - {fileID: 7447163605589988728, guid: 4dffb120bad3d4fd2ab77854ab68099c, type: 3}
   - {fileID: 8619338778009079851, guid: e14f8add6054f419780de8e606ee807d, type: 3}
   - {fileID: 856601670117699726, guid: cee0f0c159d2149c195e0863b51936ae, type: 3}
+  maleOld: {fileID: 7447163605589988728, guid: 4dffb120bad3d4fd2ab77854ab68099c, type: 3}
+  maleYoung: {fileID: 7478225697116208144, guid: 38ecf46a26356488989b5a3b6ba951e0, type: 3}
+  female: {fileID: 6252356961377389083, guid: 47f8b78adbda5448eaebc7c21a223b72, type: 3}
+  zombi: {fileID: 856601670117699726, guid: cee0f0c159d2149c195e0863b51936ae, type: 3}
   index: 0
 --- !u!1 &1900103931
 GameObject:

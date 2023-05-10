@@ -49,6 +49,11 @@ struct CharacterDataView: View {
     private func sendData() {
         Unity.shared.sendMessage(
             ObjectName,
+            methodName: "SetAge",
+            message: age
+        )
+        Unity.shared.sendMessage(
+            ObjectName,
             methodName: "SetName",
             message: name
         )
@@ -56,11 +61,6 @@ struct CharacterDataView: View {
             ObjectName,
             methodName: "SetGender",
             message: gender.rawValue
-        )
-        Unity.shared.sendMessage(
-            ObjectName,
-            methodName: "SetAge",
-            message: age
         )
     }
 }

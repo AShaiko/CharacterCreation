@@ -5,12 +5,18 @@ using UnityEngine;
 public class CharacterBehaviour : MonoBehaviour
 {
     public GameObject[] characterPrefab;
-    public int index = 0;
+    public GameObject maleOld;
+    public GameObject maleYoung;
+    public GameObject female;
+    public GameObject zombi;
+
+    private int index = 0;
 
     private string characterTag = "Character";
 
     void Start() {
-        ChangeObject();
+        GameObject newObject = Instantiate(characterPrefab[index], transform.position, transform.rotation);
+        ChangeObject(newObject);
     }
 
     public void ChangeToNext() {
@@ -20,11 +26,21 @@ public class CharacterBehaviour : MonoBehaviour
             index = 0;
         }
 
-        ChangeObject();
+        GameObject newObject = Instantiate(characterPrefab[index], transform.position, transform.rotation);
+        ChangeObject(newObject);
     }
 
-    private void ChangeObject() {
-        GameObject newObject = Instantiate(characterPrefab[index], transform.position, transform.rotation);
+    public void SetGender(string gender) {
+        GameObject selectedObject;
+        if (gender == "Male") selectedObject = maleYoung;
+        else if (gender == "Female") selectedObject = female;
+        else selectedObject = zombi;
+
+        GameObject newObject = Instantiate(selectedObject, transform.position, transform.rotation);
+        ChangeObject(newObject);
+    }
+
+    private void ChangeObject(GameObject newObject) {
         GameObject child = GameObject.FindGameObjectWithTag(characterTag);
         if (child != null) {
             Destroy(child);

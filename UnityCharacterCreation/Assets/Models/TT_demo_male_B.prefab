@@ -817,6 +817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7447163605590411544}
   - component: {fileID: 7447163605599512414}
+  - component: {fileID: -2650536939011546992}
   m_Layer: 0
   m_Name: TT_demo_male_B
   m_TagString: Character
@@ -862,6 +863,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-2650536939011546992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7447163605589988728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2291a01b7f6dd42a1b8f4c5e61578579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7447163605589988732
 GameObject:
   m_ObjectHideFlags: 0

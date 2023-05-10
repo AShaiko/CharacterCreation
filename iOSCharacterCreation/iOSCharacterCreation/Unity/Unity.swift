@@ -56,19 +56,19 @@ class Unity: UIResponder, UIApplicationDelegate {
             appLaunchOpts: nil
         )
         
-        sendCachedMessages()
+        self.sendCachedMessages()
     }
 
     private func showWindow() {
         if isInitialized {
             ufw?.showUnityWindow()
-            sendCachedMessages()
+            self.sendCachedMessages()
         }
     }
 
     private func unloadWindow() {
         if isInitialized {
-            sendCachedMessages()
+            self.sendCachedMessages()
             ufw?.unloadApplication()
         }
     }

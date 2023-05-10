@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class CharacterBehaviour : MonoBehaviour
@@ -9,11 +10,15 @@ public class CharacterBehaviour : MonoBehaviour
     public GameObject maleYoung;
     public GameObject female;
     public GameObject zombi;
+    public TMPro.TextMeshProUGUI nameLabel;
+    public TMPro.TextMeshProUGUI ageLabel;
 
     private int index = 0;
 
     private string characterTag = "Character";
+    private string infoTag = "Info";
     private int age = 0;
+    private string characterName = "";
 
     void Start() {
         GameObject newObject = Instantiate(characterPrefab[index], transform.position, transform.rotation);
@@ -33,6 +38,7 @@ public class CharacterBehaviour : MonoBehaviour
 
     public void SetAge(string age) {
         this.age = int.Parse(age);
+        this.ageLabel.text = "Age: " + age;
     }
 
     public void SetGender(string gender) {
@@ -43,6 +49,11 @@ public class CharacterBehaviour : MonoBehaviour
 
         GameObject newObject = Instantiate(selectedObject, transform.position, transform.rotation);
         ChangeObject(newObject);
+    }
+
+    public void SetName(string name) {
+        this.characterName = name;
+        this.nameLabel.text = "Name: " + name;
     }
 
     private void ChangeObject(GameObject newObject) {

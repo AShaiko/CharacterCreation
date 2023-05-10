@@ -11,7 +11,7 @@ fileprivate let ObjectName = "Character"
 
 struct CharacterDataView: View {
     @State private var name: String = ""
-    @State private var gender: String = ""
+    @State private var gender: Gender = .male
     @State private var age: Int = 0
     
     var body: some View {
@@ -20,9 +20,13 @@ struct CharacterDataView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
-            TextField("Gender", text: $gender)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+            Picker(selection: $gender, label: Text("Gender")) {
+                ForEach(Gender.allCases, id: \.self) { gender in
+                    Text(gender.rawValue)
+                }
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding()
             
             Stepper(value: $age, in: 0...100, step: 1) {
                 Text("Age: \(age)")
@@ -47,7 +51,7 @@ struct CharacterDataView: View {
         Unity.shared.sendMessage(
             ObjectName,
             methodName: "SetGender",
-            message: gender
+            message: gender.rawValue
         )
         Unity.shared.sendMessage(
             ObjectName,

@@ -22,6 +22,7 @@
 		D38CFCAB2A0B78280055F4C3 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38CFCAA2A0B78280055F4C3 /* UnityFramework.framework */; };
 		D38CFCAC2A0B78280055F4C3 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D38CFCAA2A0B78280055F4C3 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D38CFCB02A0B7C270055F4C3 /* UnityMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38CFCAF2A0B7C270055F4C3 /* UnityMessage.swift */; };
+		D38CFCB32A0B88670055F4C3 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38CFCB22A0B88670055F4C3 /* Gender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		D38CFCA52A0B77950055F4C3 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38CFCAA2A0B78280055F4C3 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38CFCAF2A0B7C270055F4C3 /* UnityMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityMessage.swift; sourceTree = "<group>"; };
+		D38CFCB22A0B88670055F4C3 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		D3DA4BB12A0B73440002C43D /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 		D36DE15B2A05479600CEB800 /* iOSCharacterCreation */ = {
 			isa = PBXGroup;
 			children = (
+				D38CFCB12A0B88530055F4C3 /* Enums */,
 				D38CFCAE2A0B7C070055F4C3 /* Unity */,
 				D36DE18C2A05494700CEB800 /* Views */,
 				D36DE15C2A05479600CEB800 /* AppDelegate.swift */,
@@ -186,6 +189,14 @@
 				D38CFCAF2A0B7C270055F4C3 /* UnityMessage.swift */,
 			);
 			path = Unity;
+			sourceTree = "<group>";
+		};
+		D38CFCB12A0B88530055F4C3 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				D38CFCB22A0B88670055F4C3 /* Gender.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +335,7 @@
 				D36DE1992A07B9F700CEB800 /* Unity.swift in Sources */,
 				D36DE15D2A05479600CEB800 /* AppDelegate.swift in Sources */,
 				D36DE18E2A05496000CEB800 /* ContentView.swift in Sources */,
+				D38CFCB32A0B88670055F4C3 /* Gender.swift in Sources */,
 				D38CFCB02A0B7C270055F4C3 /* UnityMessage.swift in Sources */,
 				D36DE1902A054AAE00CEB800 /* CharacterDataView.swift in Sources */,
 				D36DE15F2A05479600CEB800 /* SceneDelegate.swift in Sources */,

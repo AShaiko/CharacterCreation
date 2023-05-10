@@ -13,6 +13,7 @@ public class CharacterBehaviour : MonoBehaviour
     private int index = 0;
 
     private string characterTag = "Character";
+    private int age = 0;
 
     void Start() {
         GameObject newObject = Instantiate(characterPrefab[index], transform.position, transform.rotation);
@@ -30,9 +31,13 @@ public class CharacterBehaviour : MonoBehaviour
         ChangeObject(newObject);
     }
 
+    public void SetAge(string age) {
+        this.age = int.Parse(age);
+    }
+
     public void SetGender(string gender) {
         GameObject selectedObject;
-        if (gender == "Male") selectedObject = maleYoung;
+        if (gender == "Male") selectedObject = age > 18 ? maleOld : maleYoung;
         else if (gender == "Female") selectedObject = female;
         else selectedObject = zombi;
 

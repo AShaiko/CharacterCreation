@@ -12,13 +12,15 @@ class Unity: UIResponder, UIApplicationDelegate {
 
     static let shared = Unity()
 
+    var ufw : UnityFramework?
+    var hostMainWindow : UIWindow?
+
+    var cachedMessages = [UnityMessage]()
+
     private let dataBundleId: String = "com.unity3d.framework"
     private let frameworkPath: String = "/Frameworks/UnityFramework.framework"
 
-    private var ufw : UnityFramework?
-    private var hostMainWindow : UIWindow?
-
-    private var isInitialized: Bool {
+    var isInitialized: Bool {
         ufw?.appController() != nil
     }
 
@@ -53,16 +55,20 @@ class Unity: UIResponder, UIApplicationDelegate {
             argv: CommandLine.unsafeArgv,
             appLaunchOpts: nil
         )
+        
+        sendCachedMessages()
     }
 
     private func showWindow() {
         if isInitialized {
             ufw?.showUnityWindow()
+            sendCachedMessages()
         }
     }
 
     private func unloadWindow() {
         if isInitialized {
+            sendCachedMessages()
             ufw?.unloadApplication()
         }
     }

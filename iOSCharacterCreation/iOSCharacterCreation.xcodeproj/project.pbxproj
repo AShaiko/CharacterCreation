@@ -21,6 +21,7 @@
 		D36DE1992A07B9F700CEB800 /* Unity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36DE1972A07B9B700CEB800 /* Unity.swift */; };
 		D38CFCAB2A0B78280055F4C3 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38CFCAA2A0B78280055F4C3 /* UnityFramework.framework */; };
 		D38CFCAC2A0B78280055F4C3 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D38CFCAA2A0B78280055F4C3 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D38CFCB02A0B7C270055F4C3 /* UnityMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38CFCAF2A0B7C270055F4C3 /* UnityMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		D36DE19A2A07BAFD00CEB800 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38CFCA52A0B77950055F4C3 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38CFCAA2A0B78280055F4C3 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D38CFCAF2A0B7C270055F4C3 /* UnityMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityMessage.swift; sourceTree = "<group>"; };
 		D3DA4BB12A0B73440002C43D /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 		D36DE15B2A05479600CEB800 /* iOSCharacterCreation */ = {
 			isa = PBXGroup;
 			children = (
+				D38CFCAE2A0B7C070055F4C3 /* Unity */,
 				D36DE18C2A05494700CEB800 /* Views */,
 				D36DE15C2A05479600CEB800 /* AppDelegate.swift */,
 				D36DE15E2A05479600CEB800 /* SceneDelegate.swift */,
@@ -135,7 +138,6 @@
 				D36DE1652A05479800CEB800 /* Assets.xcassets */,
 				D36DE1672A05479800CEB800 /* LaunchScreen.storyboard */,
 				D36DE16A2A05479800CEB800 /* Info.plist */,
-				D36DE1972A07B9B700CEB800 /* Unity.swift */,
 			);
 			path = iOSCharacterCreation;
 			sourceTree = "<group>";
@@ -175,6 +177,15 @@
 				D36DE19A2A07BAFD00CEB800 /* UnityFramework.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D38CFCAE2A0B7C070055F4C3 /* Unity */ = {
+			isa = PBXGroup;
+			children = (
+				D36DE1972A07B9B700CEB800 /* Unity.swift */,
+				D38CFCAF2A0B7C270055F4C3 /* UnityMessage.swift */,
+			);
+			path = Unity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +324,7 @@
 				D36DE1992A07B9F700CEB800 /* Unity.swift in Sources */,
 				D36DE15D2A05479600CEB800 /* AppDelegate.swift in Sources */,
 				D36DE18E2A05496000CEB800 /* ContentView.swift in Sources */,
+				D38CFCB02A0B7C270055F4C3 /* UnityMessage.swift in Sources */,
 				D36DE1902A054AAE00CEB800 /* CharacterDataView.swift in Sources */,
 				D36DE15F2A05479600CEB800 /* SceneDelegate.swift in Sources */,
 			);

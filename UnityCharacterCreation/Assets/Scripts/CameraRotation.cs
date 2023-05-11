@@ -21,7 +21,7 @@ public class CameraRotation : MonoBehaviour
                 Vector2 currentTouchPos = touch.position;
                 Vector2 touchDelta = currentTouchPos - touchStartPos;
 
-                rotationX += touchDelta.x * rotationSpeed * damping;
+                //rotationX += touchDelta.x * rotationSpeed * damping;
                 rotationY -= touchDelta.y * rotationSpeed * damping;
 
                 transform.rotation = Quaternion.Euler(rotationY, rotationX, 0f);

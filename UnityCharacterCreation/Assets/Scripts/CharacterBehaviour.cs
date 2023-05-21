@@ -20,10 +20,10 @@ public class CharacterBehaviour : MonoBehaviour
     private int age = 0;
     private string characterName = "";
 
-    //void Start() {
-    //    GameObject newObject = Instantiate(characterPrefab[index], transform.position, transform.rotation);
-    //    ChangeObject(newObject);
-    //}
+    void Start() {
+       GameObject newObject = Instantiate(characterPrefab[index], transform.position, transform.rotation);
+       ChangeObject(newObject);
+    }
 
     public void ChangeToNext() {
         if (index < characterPrefab.Length - 1) {

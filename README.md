@@ -6,6 +6,11 @@ iOS demo application for creating character by getting data.
 2. Install [Unity editor](https://unity.com/releases/editor/archive) v.2021.3.23f1
 3. Install [Xcode](https://apps.apple.com/ru/app/xcode/id497799835?mt=12) v.14.2 (14C18)
 
+## Technologies
+
+The project has iOS native application, Unity application.
+Use [Google AdMob](https://admob.google.com/home/) for ads. Before publish need change adUnitId for real one instead of testing. 
+
 ## Run
 
 The project has 3 part:
@@ -15,7 +20,7 @@ The project has 3 part:
 
 Application can be run ONLY by device (not simulator).
 
-### Unity project
+# Unity project
 
 1. Open Unity project UnityCharacterCreation/UnityCharacterCreation.sln
 2. Open SampleScene

@@ -5,6 +5,6 @@
       location = "container:iOSCharacterCreation/iOSCharacterCreation.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:UnityExport/Unity-iPhone.xcodeproj">
+      location = "container:UnityExport/Unity-iPhone.xcodeproj">
    </FileRef>
 </Workspace>

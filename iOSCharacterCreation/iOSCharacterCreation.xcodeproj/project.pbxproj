@@ -19,8 +19,8 @@
 		D36DE18E2A05496000CEB800 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36DE18D2A05496000CEB800 /* ContentView.swift */; };
 		D36DE1902A054AAE00CEB800 /* CharacterDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36DE18F2A054AAE00CEB800 /* CharacterDataView.swift */; };
 		D36DE1992A07B9F700CEB800 /* Unity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36DE1972A07B9B700CEB800 /* Unity.swift */; };
-		D38CFCAB2A0B78280055F4C3 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38CFCAA2A0B78280055F4C3 /* UnityFramework.framework */; };
-		D38CFCAC2A0B78280055F4C3 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D38CFCAA2A0B78280055F4C3 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D38883F22A3897B000653AD1 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38883F12A3897B000653AD1 /* UnityFramework.framework */; };
+		D38883F32A3897B000653AD1 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D38883F12A3897B000653AD1 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D38CFCB02A0B7C270055F4C3 /* UnityMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38CFCAF2A0B7C270055F4C3 /* UnityMessage.swift */; };
 		D38CFCB32A0B88670055F4C3 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38CFCB22A0B88670055F4C3 /* Gender.swift */; };
 /* End PBXBuildFile section */
@@ -49,7 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D38CFCAC2A0B78280055F4C3 /* UnityFramework.framework in Embed Frameworks */,
+				D38883F32A3897B000653AD1 /* UnityFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,13 +72,10 @@
 		D36DE17F2A05479900CEB800 /* iOSCharacterCreationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCharacterCreationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D36DE18D2A05496000CEB800 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D36DE18F2A054AAE00CEB800 /* CharacterDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDataView.swift; sourceTree = "<group>"; };
-		D36DE1972A07B9B700CEB800 /* Unity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unity.swift; sourceTree = "<group>"; };
-		D36DE19A2A07BAFD00CEB800 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D38CFCA52A0B77950055F4C3 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D38CFCAA2A0B78280055F4C3 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D36DE1972A07B9B700CEB800 /* Unity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Unity.swift; path = iOSCharacterCreation/Unity/Unity.swift; sourceTree = SOURCE_ROOT; };
+		D38883F12A3897B000653AD1 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38CFCAF2A0B7C270055F4C3 /* UnityMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityMessage.swift; sourceTree = "<group>"; };
 		D38CFCB22A0B88670055F4C3 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
-		D3DA4BB12A0B73440002C43D /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D38CFCAB2A0B78280055F4C3 /* UnityFramework.framework in Frameworks */,
+				D38883F22A3897B000653AD1 /* UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,10 +171,7 @@
 		D36DE1912A07B30A00CEB800 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D38CFCAA2A0B78280055F4C3 /* UnityFramework.framework */,
-				D38CFCA52A0B77950055F4C3 /* UnityFramework.framework */,
-				D3DA4BB12A0B73440002C43D /* UnityFramework.framework */,
-				D36DE19A2A07BAFD00CEB800 /* UnityFramework.framework */,
+				D38883F12A3897B000653AD1 /* UnityFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -429,6 +423,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -490,6 +485,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -519,6 +515,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2H6F7WJ3G4;
+				ENABLE_BITCODE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSCharacterCreation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -550,6 +547,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2H6F7WJ3G4;
+				ENABLE_BITCODE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSCharacterCreation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

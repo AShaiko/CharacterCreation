@@ -1,2 +1,7 @@
-/UnityExport/*
+/UnityExport/Data/*
+/UnityExport/Pods/*
+/UnityExport/Podfile.lock
+/UnityExport/Unity-iPhone Tests/*
+/UnityExport/Libraries/*
+/UnityExport/Classes/*
 .DS_Store

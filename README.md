@@ -33,7 +33,7 @@ Application can be run ONLY by device (not simulator).
 
 # iOS project
 
-1. Open by Xcode CharacterCreation.xcworkspace
+1. Open by Xcode UnityExport/Unity-iPhone.xcworkspace
 2. In Unity-iPhone project select Data group and check that it include in Target Membership of Unity Framework.
 3. Select connected device and RUN.
 
